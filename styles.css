@@ -184,6 +184,37 @@ section { padding: 96px 0; }
   50%       { opacity: 1; transform: scaleY(1)   translateY(0); }
 }
 
+/* ── Gradientes de transição ────────────────── */
+#habilidades,
+#contato {
+  position: relative;
+}
+
+/* topo das pretas: fadeIn vindo do cinza */
+#habilidades::before,
+#contato::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--bg2), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* base das pretas: fadeOut indo pro cinza */
+#hero::after,
+#habilidades::after,
+#contato::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--bg2));
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* ── Sobre ──────────────────────────────────── */
 #sobre { background: var(--bg2); }
 
