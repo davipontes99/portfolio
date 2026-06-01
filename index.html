@@ -194,13 +194,13 @@
     <div class="container">
       <h2 class="section-title">Contato</h2>
       <p class="contact-sub">Tem um projeto em mente? Vamos conversar!</p>
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeedyegl" method="POST">
         <div class="form-row">
-          <input type="text" placeholder="Seu nome" required />
-          <input type="email" placeholder="Seu e-mail" required />
+          <input type="text" name="name" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
         </div>
-        <input type="text" placeholder="Assunto" required />
-        <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+        <input type="text" name="assunto" placeholder="Assunto" required />
+        <textarea rows="5" name="message" placeholder="Sua mensagem..." required></textarea>
         <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
       </form>
       <div class="social-links">
