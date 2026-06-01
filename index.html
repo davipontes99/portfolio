@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi Henrique Azevedo Pontes — Desenvolvedor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">DH</span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Davi Henrique<br>Azevedo Pontes</h1>
+      <h2 class="hero-title">Sistemas de Informação · Dev &amp; Dados</h2>
+      <p class="hero-sub">Estudante de SI focado em Java, SQL e soluções de software — com perfil analítico em Power BI e visão de negócios digitais.</p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <!-- FOTO: substitua avatar-placeholder por <img> quando tiver a foto -->
+          <div class="avatar-placeholder" id="avatar">DH</div>
+        </div>
+        <div class="about-text">
+          <p>
+            Olá! Sou o Davi, estudante do 3º período de Sistemas de Informação e entusiasta
+            do ecossistema de tecnologia e negócios digitais.
+          </p>
+          <p>
+            Atualmente, tenho focado meu desenvolvimento técnico na linguagem <strong>Java</strong>,
+            na estruturação de <strong>bancos de dados SQL</strong> e na criação de soluções de software
+            funcionais. Além do desenvolvimento, possuo forte perfil analítico, aplicando ferramentas
+            como <strong>Power BI</strong> e <strong>Excel avançado</strong> para interpretação de dados
+            e suporte à tomada de decisões.
+          </p>
+          <p>
+            Movido pelo espírito empreendedor, também atuo na gestão e formalização de projetos
+            de e-commerce (MEI), o que me deu uma visão prática sobre processos, organização
+            e mercado digital.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🚗</span>
+              <span>CNH Categorias A e B — disponível para locomoção</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💡</span>
+              <span>Disciplinado, focado em resolução de problemas e em constante evolução técnica</span>
+            </div>
+          </div>
+          <a href="cv.pdf" class="btn btn-outline" id="download-cv" download="Davi_Henrique_CV.pdf">Baixar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">☕</div>
+          <h3>Desenvolvimento de Software</h3>
+          <ul>
+            <li>Java</li>
+            <li>IntelliJ IDEA</li>
+            <li>Swing (Interface Desktop)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Banco de Dados</h3>
+          <ul>
+            <li>SQL</li>
+            <li>Modelagem de Dados</li>
+            <li>Integração Java + SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>Dados &amp; BI</h3>
+          <ul>
+            <li>Power BI</li>
+            <li>Excel Avançado</li>
+            <li>PROCV / Tabelas Dinâmicas</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛒</div>
+          <h3>Negócios Digitais</h3>
+          <ul>
+            <li>Gestão de E-commerce</li>
+            <li>Vendas Online</li>
+            <li>Formalização MEI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="softskills-section">
+        <h3 class="softskills-title">Soft Skills</h3>
+        <div class="softskills-list">
+          <span>Disciplina &amp; Foco</span>
+          <span>Autodidatismo</span>
+          <span>Organização</span>
+          <span>Resolução de Problemas</span>
+          <span>Visão de Negócio</span>
+          <span>Empreendedorismo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <div class="project-links">
+              <a href="https://github.com/davipontes99/rifabot" target="_blank" rel="noopener" title="GitHub">&#60;/&#62;</a>
+            </div>
+          </div>
+          <h3>RifaBot — Bot de WhatsApp</h3>
+          <p>Bot autônomo para WhatsApp que gerencia rifas e apostas do jogo do bicho diretamente pelo chat. Registra apostas, controla os 25 grupos de animais e responde automaticamente aos participantes.</p>
+          <div class="project-tags">
+            <span>Node.js</span><span>Baileys</span><span>WhatsApp API</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🪵</span>
+            <div class="project-links">
+              <a href="https://github.com/davipontes99/marcenaria-pro" target="_blank" rel="noopener" title="GitHub">&#60;/&#62;</a>
+            </div>
+          </div>
+          <h3>Marcenaria Pro — App Desktop</h3>
+          <p>Aplicativo desktop para marceneiros com visualização 3D de móveis, painel de propriedades, geração automática de lista de corte e exportação de orçamento em PDF.</p>
+          <div class="project-tags">
+            <span>Electron</span><span>React</span><span>TypeScript</span><span>3D Viewport</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🐾</span>
+            <div class="project-links">
+              <a href="https://github.com/davipontes99/sistema-veterinario" target="_blank" rel="noopener" title="GitHub">&#60;/&#62;</a>
+            </div>
+          </div>
+          <h3>Sistema Veterinário — Java + MySQL</h3>
+          <p>Sistema de cadastro clínico veterinário com operações CRUD completas: cadastrar, listar, buscar, alterar e deletar animais, além de controle de enfermidades e medicamentos vinculados.</p>
+          <div class="project-tags">
+            <span>Java</span><span>MySQL</span><span>JDBC</span><span>SQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="contact-sub">Tem um projeto em mente? Vamos conversar!</p>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+        </div>
+        <input type="text" placeholder="Assunto" required />
+        <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/davipontes99" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/davipontes99" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:pdavi8511@gmail.com">E-mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Feito por Davi Henrique Azevedo Pontes &mdash; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
