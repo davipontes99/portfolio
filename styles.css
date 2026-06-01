@@ -185,6 +185,16 @@ section { padding: 96px 0; }
   flex-shrink: 0;
 }
 
+.avatar-photo {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 8px 40px rgba(108,99,255,0.4);
+  border: 3px solid var(--accent);
+  flex-shrink: 0;
+}
+
 .about-text p { color: var(--muted); margin-bottom: 16px; font-size: 1.05rem; line-height: 1.75; }
 .about-text strong { color: var(--accent2); font-weight: 600; }
 .about-text .btn { margin-top: 8px; }
