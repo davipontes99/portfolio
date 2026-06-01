@@ -186,7 +186,7 @@ section { padding: 96px 0; }
 }
 
 .avatar-photo {
-  width: 180px; height: 180px;
+  width: 130px; height: 130px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
