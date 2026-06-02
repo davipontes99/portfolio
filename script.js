@@ -19,27 +19,37 @@ window.addEventListener('scroll', () => {
     : 'rgba(10,10,15,0.85)';
 });
 
-// Animate sections on scroll
-const observer = new IntersectionObserver(entries => {
+// Scroll Reveal
+const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('visible');
-      observer.unobserve(e.target);
+      revealObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.skill-card, .project-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  observer.observe(el);
-});
+const revealSelectors = [
+  '.section-title',
+  '.about-grid',
+  '.about-text p',
+  '.about-highlights',
+  '.about-text .btn',
+  '.skill-card',
+  '.project-card',
+  '.softskills-section',
+  '.contact-sub',
+  '.contact-form',
+  '.social-links',
+  'footer p',
+];
 
-document.addEventListener('DOMContentLoaded', () => {
-  const style = document.createElement('style');
-  style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-  document.head.appendChild(style);
+revealSelectors.forEach(selector => {
+  document.querySelectorAll(selector).forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${i * 0.08}s`;
+    revealObserver.observe(el);
+  });
 });
 
 // ── Particles Canvas ─────────────────────────

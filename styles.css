@@ -411,6 +411,17 @@ section { padding: 96px 0; }
 .social-links a .fas.fa-envelope { color: #ea4335; }
 .social-links a .fab.fa-whatsapp { color: #25d366; }
 
+/* ── Scroll Reveal ──────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── Footer ─────────────────────────────────── */
 footer {
   text-align: center;
