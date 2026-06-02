@@ -364,6 +364,8 @@ section { padding: 96px 0; }
   padding: 28px 24px;
   transition: transform 0.2s, border-color 0.2s;
   display: flex; flex-direction: column; gap: 12px;
+  position: relative;
+  overflow: visible;
 }
 .project-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 
@@ -381,6 +383,32 @@ section { padding: 96px 0; }
 
 .project-card h3 { font-size: 1.05rem; font-weight: 700; }
 .project-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; flex: 1; }
+
+/* Project Preview on Hover */
+.project-preview {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px) scale(0.95);
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(108,99,255,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+.project-preview img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.project-card:hover .project-preview {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
 
 .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .project-tags span {
