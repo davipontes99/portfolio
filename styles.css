@@ -272,15 +272,52 @@ section { padding: 96px 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px 24px;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  cursor: default;
 }
-.skill-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 0 24px rgba(108,99,255,0.25), 0 8px 32px rgba(0,0,0,0.4);
+}
 
-.skill-icon { font-size: 2rem; margin-bottom: 12px; }
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
+}
+.skill-card:hover .skill-icon {
+  transform: scale(1.35) rotate(-8deg);
+}
+
 .skill-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 12px; color: var(--text); }
 .skill-card ul { list-style: none; }
-.skill-card li { color: var(--muted); font-size: 0.9rem; padding: 3px 0; }
+.skill-card li {
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 4px 0 2px;
+}
 .skill-card li::before { content: '→ '; color: var(--accent); }
+
+/* Progress bars */
+.skill-bar-wrap {
+  height: 4px;
+  background: rgba(108,99,255,0.12);
+  border-radius: 4px;
+  margin: 4px 0 8px;
+  overflow: hidden;
+}
+.skill-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 0.7s cubic-bezier(.4,0,.2,1);
+}
+.skill-card:hover .skill-bar {
+  width: var(--level);
+}
 
 /* ── Soft Skills ────────────────────────────── */
 .softskills-section { margin-top: 48px; }

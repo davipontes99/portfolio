@@ -52,6 +52,18 @@ revealSelectors.forEach(selector => {
   });
 });
 
+// ── Skill Progress Bars ───────────────────────
+document.querySelectorAll('.skill-card li[data-level]').forEach(li => {
+  const level = li.getAttribute('data-level');
+  const wrap = document.createElement('div');
+  wrap.className = 'skill-bar-wrap';
+  const bar = document.createElement('div');
+  bar.className = 'skill-bar';
+  bar.style.setProperty('--level', level + '%');
+  wrap.appendChild(bar);
+  li.insertAdjacentElement('afterend', wrap);
+});
+
 // ── Particles Canvas ─────────────────────────
 (function () {
   const canvas = document.getElementById('particles-canvas');
