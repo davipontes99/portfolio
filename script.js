@@ -1,3 +1,35 @@
+// ── Touch / Mobile Hover Fix ──────────────────
+const isTouch = () => window.matchMedia('(hover: none)').matches;
+
+// Skill cards: tap para abrir/fechar barras
+document.querySelectorAll('.skill-card').forEach(card => {
+  card.addEventListener('click', () => {
+    if (!isTouch()) return;
+    const isOpen = card.classList.contains('touch-active');
+    document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('touch-active'));
+    if (!isOpen) card.classList.add('touch-active');
+  });
+});
+
+// Project cards: tap para mostrar/esconder preview
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    if (!isTouch()) return;
+    if (e.target.closest('a')) return; // deixa links funcionarem
+    const isOpen = card.classList.contains('touch-active');
+    document.querySelectorAll('.project-card').forEach(c => c.classList.remove('touch-active'));
+    if (!isOpen) card.classList.add('touch-active');
+  });
+});
+
+// Fechar ao tocar fora
+document.addEventListener('click', (e) => {
+  if (!isTouch()) return;
+  if (!e.target.closest('.skill-card') && !e.target.closest('.project-card')) {
+    document.querySelectorAll('.skill-card, .project-card').forEach(c => c.classList.remove('touch-active'));
+  }
+});
+
 // Mobile menu toggle
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');

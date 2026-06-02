@@ -275,7 +275,8 @@ section { padding: 96px 0; }
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   cursor: default;
 }
-.skill-card:hover {
+.skill-card:hover,
+.skill-card.touch-active {
   transform: translateY(-6px);
   border-color: var(--accent);
   box-shadow: 0 0 24px rgba(108,99,255,0.25), 0 8px 32px rgba(0,0,0,0.4);
@@ -287,7 +288,8 @@ section { padding: 96px 0; }
   display: inline-block;
   transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
 }
-.skill-card:hover .skill-icon {
+.skill-card:hover .skill-icon,
+.skill-card.touch-active .skill-icon {
   transform: scale(1.35) rotate(-8deg);
 }
 
@@ -315,7 +317,8 @@ section { padding: 96px 0; }
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   transition: width 0.7s cubic-bezier(.4,0,.2,1);
 }
-.skill-card:hover .skill-bar {
+.skill-card:hover .skill-bar,
+.skill-card.touch-active .skill-bar {
   width: var(--level);
 }
 
@@ -367,7 +370,8 @@ section { padding: 96px 0; }
   position: relative;
   overflow: visible;
 }
-.project-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.project-card:hover,
+.project-card.touch-active { transform: translateY(-4px); border-color: var(--accent); }
 
 .project-header {
   display: flex; justify-content: space-between; align-items: center;
@@ -405,7 +409,8 @@ section { padding: 96px 0; }
   object-fit: cover;
   display: block;
 }
-.project-card:hover .project-preview {
+.project-card:hover .project-preview,
+.project-card.touch-active .project-preview {
   opacity: 1;
   transform: translateX(-50%) translateY(0) scale(1);
 }
