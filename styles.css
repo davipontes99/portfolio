@@ -530,7 +530,7 @@ section { padding: 96px 0; }
 .tech-showcase {
   position: relative;
   width: 100%;
-  height: 420px;
+  height: 520px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -556,15 +556,22 @@ section { padding: 96px 0; }
 .tech-item:hover { border-color: var(--accent); color: var(--text); }
 .tech-item i { font-size: 1.8rem; }
 
-.tech-item.t1 { top: 20px;  left: 20px;  animation: float1 6s ease-in-out infinite; } .tech-item.t1 i { color: #f89820; }
-.tech-item.t2 { top: 20px;  left: 130px; animation: float2 7s ease-in-out infinite; } .tech-item.t2 i { color: #f7df1e; }
-.tech-item.t3 { top: 20px;  right: 20px; animation: float3 5s ease-in-out infinite; } .tech-item.t3 i { color: #6c63ff; }
-.tech-item.t4 { top: 130px; left: 20px;  animation: float2 8s ease-in-out infinite; } .tech-item.t4 i { color: #68a063; }
-.tech-item.t5 { top: 130px; left: 50%;   transform: translateX(-50%); animation: float1 6.5s ease-in-out infinite; } .tech-item.t5 i { color: #61dafb; }
-.tech-item.t6 { top: 130px; right: 20px; animation: float3 7.5s ease-in-out infinite; } .tech-item.t6 i { color: #f05032; }
-.tech-item.t7 { bottom: 80px; left: 20px;  animation: float3 6s ease-in-out infinite; } .tech-item.t7 i { color: #e34f26; }
-.tech-item.t8 { bottom: 80px; left: 130px; animation: float1 8s ease-in-out infinite; } .tech-item.t8 i { color: #264de4; }
-.tech-item.t9 { bottom: 80px; right: 20px; animation: float2 5.5s ease-in-out infinite; } .tech-item.t9 i { color: #fff; }
+.tech-item.t1  { top: 14px;   left: 14px;   animation: float1 6s   ease-in-out infinite; } .tech-item.t1 i  { color: #f89820; }
+.tech-item.t2  { top: 14px;   left: 110px;  animation: float2 7s   ease-in-out infinite; } .tech-item.t2 i  { color: #f7df1e; }
+.tech-item.t3  { top: 14px;   right: 14px;  animation: float3 5s   ease-in-out infinite; } .tech-item.t3 i  { color: #6c63ff; }
+.tech-item.t4  { top: 110px;  left: 14px;   animation: float2 8s   ease-in-out infinite; } .tech-item.t4 i  { color: #68a063; }
+.tech-item.t5  { top: 110px;  left: 50%;    transform: translateX(-50%); animation: float1 6.5s ease-in-out infinite; } .tech-item.t5 i { color: #61dafb; }
+.tech-item.t6  { top: 110px;  right: 14px;  animation: float3 7.5s ease-in-out infinite; } .tech-item.t6 i  { color: #f05032; }
+.tech-item.t7  { top: 210px;  left: 14px;   animation: float3 6s   ease-in-out infinite; } .tech-item.t7 i  { color: #e34f26; }
+.tech-item.t8  { top: 210px;  left: 110px;  animation: float1 8s   ease-in-out infinite; } .tech-item.t8 i  { color: #264de4; }
+.tech-item.t9  { top: 210px;  right: 14px;  animation: float2 5.5s ease-in-out infinite; } .tech-item.t9 i  { color: #fff; }
+.tech-item.t10 { bottom: 70px; left: 14px;   animation: float1 7s   ease-in-out infinite; } .tech-item.t10 i { color: #3776ab; }
+.tech-item.t11 { bottom: 70px; left: 50%;    transform: translateX(-50%); animation: float3 9s ease-in-out infinite; } .tech-item.t11 i { color: #d97706; }
+.tech-item.t12 { bottom: 70px; right: 14px;  animation: float2 6s   ease-in-out infinite; } .tech-item.t12 i { color: #a78bfa; }
+.tech-item.t13 { bottom: 8px;  left: 14px;   animation: float3 8s   ease-in-out infinite; }
+.tech-item.t14 { bottom: 8px;  right: 14px;  animation: float1 7.5s ease-in-out infinite; }
+
+.tech-letter { font-size: 1.6rem; font-weight: 900; color: #5c8dde; line-height: 1; }
 
 .tech-code {
   position: absolute;
