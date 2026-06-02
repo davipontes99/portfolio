@@ -197,29 +197,62 @@
   <section id="contato">
     <div class="container">
       <h2 class="section-title">Contato</h2>
-      <p class="contact-sub">Tem um projeto em mente? Vamos conversar!</p>
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeedyegl" method="POST">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
+      <div class="contact-grid">
+
+        <!-- Lado esquerdo -->
+        <div class="contact-info">
+          <div class="availability-badge">
+            <span class="badge-dot"></span>
+            Disponível para oportunidades
+          </div>
+          <h3 class="contact-headline">Vamos trabalhar<br>juntos? 🚀</h3>
+          <p class="contact-sub">Estou aberto a projetos freelance, estágios e oportunidades de trabalho. Se tiver algo em mente, me manda uma mensagem!</p>
+
+          <div class="contact-cards">
+            <a href="mailto:pdavi8511@gmail.com" class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">E-mail</span>
+                <span class="contact-card-value">pdavi8511@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/5514997267008" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon whats"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <span class="contact-card-label">WhatsApp</span>
+                <span class="contact-card-value">(14) 99726-7008</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/davi-henrique-azevedo-pontes-30a564385" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon linkedin"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">Davi Henrique</span>
+              </div>
+            </a>
+            <a href="https://github.com/davipontes99" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-card-icon github"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">davipontes99</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <input type="text" name="assunto" placeholder="Assunto" required />
-        <textarea rows="5" name="message" placeholder="Sua mensagem..." required></textarea>
-        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-      </form>
-      <div class="social-links">
-        <a href="https://github.com/davipontes99" target="_blank" rel="noopener" title="GitHub">
-          <i class="fab fa-github"></i><span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/davi-henrique-azevedo-pontes-30a564385" target="_blank" rel="noopener" title="LinkedIn">
-          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
-        </a>
-        <a href="mailto:pdavi8511@gmail.com" title="E-mail">
-          <i class="fas fa-envelope"></i><span>pdavi8511@gmail.com</span>
-        </a>
-        <a href="https://wa.me/5514997267008" target="_blank" rel="noopener" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i><span>(14) 99726-7008</span>
-        </a>
+
+        <!-- Lado direito — Formulário -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeedyegl" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Seu nome" required />
+              <input type="email" name="email" placeholder="Seu e-mail" required />
+            </div>
+            <input type="text" name="assunto" placeholder="Assunto" required />
+            <textarea rows="5" name="message" placeholder="Sua mensagem..." required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
