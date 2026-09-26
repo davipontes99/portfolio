@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Davi Henrique Azevedo Pontes — Desenvolvedor</title>
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
@@ -29,8 +29,8 @@
     <div class="hero-content">
       <p class="hero-greeting">Olá, eu sou</p>
       <h1 class="hero-name">Davi Henrique<br>Azevedo Pontes</h1>
-      <h2 class="hero-title">Sistemas de Informação · Dev &amp; Dados</h2>
-      <p class="hero-sub">Estudante de SI focado em Java, SQL e soluções de software — com perfil analítico em Power BI e visão de negócios digitais.</p>
+      <h2 class="hero-title">Desenvolvedor Full Stack · Freelancer</h2>
+      <p class="hero-sub">Estudante de Sistemas de Informação que desenvolve sistemas sob medida para negócios reais — da gestão de estoque em produção a PDVs e SaaS.</p>
       <div class="hero-actions">
         <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
         <a href="#contato" class="btn btn-outline">Fale Comigo</a>
@@ -55,16 +55,19 @@
             do ecossistema de tecnologia e negócios digitais.
           </p>
           <p>
-            Atualmente, tenho focado meu desenvolvimento técnico na linguagem <strong>Java</strong>,
-            na estruturação de <strong>bancos de dados SQL</strong> e na criação de soluções de software
-            funcionais. Também trabalho com <strong>PHP</strong>, <strong>JavaScript</strong> e <strong>MySQL</strong>
-            no desenvolvimento web. Além do desenvolvimento, possuo forte perfil analítico, aplicando ferramentas
-            como <strong>Power BI</strong> e <strong>Excel avançado</strong> para interpretação de dados
-            e suporte à tomada de decisões.
+            Atuo como <strong>desenvolvedor freelancer</strong>, criando sistemas para pequenos negócios:
+            um sistema de gestão de CMV e estoque que está <strong>em produção</strong>, usado todos os dias
+            por uma rede de alimentação com várias lojas, e um PDV desktop com dashboard remoto.
           </p>
           <p>
-            Movido pelo espírito empreendedor, também atuo na gestão de projetos de e-commerce,
-            o que me deu uma visão prática sobre processos, organização e mercado digital.
+            Minha base é <strong>Java</strong> e <strong>SQL</strong>, e no dia a dia trabalho com
+            <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Electron</strong>,
+            <strong>PHP/Laravel</strong> e <strong>MySQL</strong>, publicando na Vercel, no Railway e na Cloudflare.
+            Também tenho perfil analítico, com <strong>Power BI</strong> e <strong>Excel avançado</strong>.
+          </p>
+          <p>
+            Levanto requisitos direto com o cliente, valido as regras de negócio antes de codar
+            e dou suporte depois da entrega, sempre com atenção à segurança dos dados.
           </p>
           <div class="about-highlights">
             <div class="highlight-item">
@@ -97,20 +100,38 @@
       <div class="skills-grid">
         <div class="skill-card">
           <div class="skill-icon">☕</div>
-          <h3>Desenvolvimento de Software</h3>
+          <h3>Back-end</h3>
           <ul>
-            <li data-level="75">Java</li>
-            <li data-level="80">IntelliJ IDEA</li>
-            <li data-level="60">Swing (Interface Desktop)</li>
+            <li data-level="75">Java + JDBC</li>
+            <li data-level="75">Node.js / Express</li>
+            <li data-level="60">PHP / Laravel</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>Front-end &amp; Desktop</h3>
+          <ul>
+            <li data-level="75">React + TypeScript</li>
+            <li data-level="65">Vite / Tailwind CSS</li>
+            <li data-level="70">Electron</li>
           </ul>
         </div>
         <div class="skill-card">
           <div class="skill-icon">🗄️</div>
           <h3>Banco de Dados</h3>
           <ul>
-            <li data-level="78">SQL</li>
-            <li data-level="65">Modelagem de Dados</li>
-            <li data-level="70">Integração Java + SQL</li>
+            <li data-level="78">MySQL / SQL</li>
+            <li data-level="70">SQLite</li>
+            <li data-level="68">Modelagem &amp; Multi-tenant</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Deploy &amp; Ferramentas</h3>
+          <ul>
+            <li data-level="75">Git / GitHub</li>
+            <li data-level="68">Vercel / Railway</li>
+            <li data-level="62">Cloudflare Pages</li>
           </ul>
         </div>
         <div class="skill-card">
@@ -155,39 +176,77 @@
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">🐾</span>
-            <div class="project-links">
-              <a href="https://github.com/davipontes99/sistema-veterinario" target="_blank" rel="noopener" title="GitHub">&#60;/&#62;</a>
-            </div>
+            <span class="project-icon">📊</span>
+            <span class="project-badge badge-live">Em produção</span>
           </div>
-          <h3>Sistema Veterinário — Java + MySQL</h3>
-          <p>Sistema de cadastro clínico veterinário com operações CRUD completas: cadastrar, listar, buscar, alterar e deletar animais, além de controle de enfermidades e medicamentos vinculados.</p>
+          <h3>CMV Dashboard — Gestão de Restaurantes</h3>
+          <p>Sistema web usado todos os dias por uma rede de alimentação com 2 marcas e várias lojas. Controla compras, fechamento de caixa, contagem de estoque, transferências entre lojas e o CMV (Custo da Mercadoria Vendida). Gera as planilhas mensais do escritório automaticamente a partir dos modelos do próprio cliente, sem mexer nas fórmulas, e lê notas fiscais por QR Code. Login JWT com vários perfis de usuário.</p>
           <div class="project-tags">
-            <span>Java</span><span>MySQL</span><span>JDBC</span><span>SQL</span>
+            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>ExcelJS</span><span>Vercel</span><span>Railway</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">📊</span>
-            <div class="project-links"></div>
+            <span class="project-icon">🍔</span>
+            <span class="project-badge badge-client">Cliente</span>
           </div>
-          <h3>CMV Dashboard — Gestão de Restaurantes</h3>
-          <p>Sistema web completo para controle de CMV (Custo de Mercadoria Vendida) de redes de restaurantes. Inclui fichas técnicas, insumos, estoque por loja e fornecedor, pedidos, compras, vendas, inventário, transposições entre lojas, relatórios em planilha, scan de notas fiscais por QR Code, boletos, chamados, lembretes e anotações. Autenticação JWT com múltiplos perfis de usuário.</p>
+          <h3>PDV Lanchonete + Dashboard Remoto</h3>
+          <p>Ponto de venda desktop para lanchonete, com caixa, produtos, sessões de caixa e impressão térmica automática em 3 vias (caixa, produção e senha). Cada venda é enviada para uma API na nuvem, que reenvia sozinha o que falhou quando estava offline. O dono acompanha as vendas pelo celular, com gráficos, mesmo com o PC da loja desligado.</p>
           <div class="project-tags">
-            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>JWT</span><span>Recharts</span><span>Tailwind CSS</span>
+            <span>Electron</span><span>React</span><span>TypeScript</span><span>SQLite</span><span>Express</span><span>MySQL</span><span>Railway</span><span>Vercel</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-header">
             <span class="project-icon">🛒</span>
-            <div class="project-links"></div>
+            <span class="project-badge badge-own">Produto próprio</span>
           </div>
-          <h3>PDV Sistema — Ponto de Venda</h3>
-          <p>Sistema desktop de ponto de venda (POS) white-label para varejo. Caixa completo com busca de produto, carrinho, desconto, pagamento em dinheiro/cartão/PIX, troco e cupom fiscal. CRUD de produtos com categorias, estoque e margem de lucro. Relatórios do dia (faturamento, ticket médio, lucro bruto) e configurações de marca personalizáveis (nome, CNPJ, logo, cor).</p>
+          <h3>Sistema PDV Multiloja — DP Softwares</h3>
+          <p>Evolução do PDV como produto para revenda. Várias filiais isoladas, cada uma com login, produtos, caixa e relatórios próprios, e perfis de administrador, loja e operador. Tem opções de produto com acréscimo de preço e 6 formas de pagamento (dinheiro, Pix, débito, crédito, VR e VA).</p>
           <div class="project-tags">
             <span>Electron</span><span>React</span><span>TypeScript</span><span>SQLite</span><span>Zustand</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🧾</span>
+            <span class="project-badge badge-own">Produto próprio</span>
+          </div>
+          <h3>SaaS de Emissão de NFC-e</h3>
+          <p>Plataforma multiempresa (multi-tenant) para emitir NFC-e, com os dados isolados por empresa e o token fiscal criptografado. A integração fica numa camada separada, que permite trocar de provedor fiscal (Focus NFe / Nuvem Fiscal) sem reescrever o sistema.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>Laravel 11</span><span>MySQL</span><span>Blade</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎮</span>
+            <div class="project-links">
+              <a href="https://the-slos.pages.dev" target="_blank" rel="noopener" title="Jogar online"><i class="fas fa-play"></i></a>
+            </div>
+          </div>
+          <h3>The Slos — Jogo RPG de Ação</h3>
+          <p>Jogo 2.5D publicado na web e ambientado em Bauru, com duas personagens jogáveis de poderes elementais, inimigos com IA, sistema de níveis, inventário, save local versionado e um boss com várias fases. Roda no PC e no celular.</p>
+          <div class="project-tags">
+            <span>Phaser 4</span><span>TypeScript</span><span>Vite</span><span>Cloudflare Pages</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🐾</span>
+            <div class="project-links">
+              <a href="https://github.com/davipontes99/sistema-veterinario" target="_blank" rel="noopener" title="GitHub">&#60;/&#62;</a>
+            </div>
+          </div>
+          <h3>Sistema Veterinário — Java + MySQL</h3>
+          <p>Sistema de cadastro clínico veterinário com CRUD completo de animais, enfermidades e medicamentos, organizado em camadas (Model/DAO) e com consultas parametrizadas.</p>
+          <div class="project-tags">
+            <span>Java</span><span>MySQL</span><span>JDBC</span><span>SQL</span>
           </div>
         </div>
 
@@ -260,6 +319,6 @@
     <p>Feito por Davi Henrique Azevedo Pontes &mdash; 2026</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

@@ -202,16 +202,32 @@ document.querySelectorAll('.skill-card li[data-level]').forEach(li => {
 })();
 
 // Contact form feedback
-document.getElementById('contact-form').addEventListener('submit', e => {
+document.getElementById('contact-form').addEventListener('submit', async e => {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Mensagem enviada!';
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
-  btn.style.background = '#22c55e';
+  btn.textContent = 'Enviando...';
+
+  let ok = false;
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+    ok = res.ok;
+  } catch (err) {
+    console.error('Erro ao enviar formulário:', err.message);
+  }
+
+  btn.textContent = ok ? 'Mensagem enviada!' : 'Erro ao enviar. Tente pelo WhatsApp.';
+  btn.style.background = ok ? '#22c55e' : '#ef4444';
+  if (ok) form.reset();
+
   setTimeout(() => {
     btn.textContent = 'Enviar Mensagem';
     btn.disabled = false;
     btn.style.background = '';
-    e.target.reset();
   }, 3000);
 });
